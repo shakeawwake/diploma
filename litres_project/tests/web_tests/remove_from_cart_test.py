@@ -7,7 +7,7 @@ from litres_project.pages.web.cart_page import cart_page
 
 
 @allure.epic('Remove book from cart')
-@allure.label("owner", "flowerfrog")
+@allure.label("owner", "shakeawwake")
 @allure.feature("Checking whether a book has been removed from cart")
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')
@@ -39,7 +39,7 @@ def test_removing_book_from_cart():
 
 
 @allure.epic('Remove book from cart')
-@allure.label("owner", "flowerfrog")
+@allure.label("owner", "shakeawwake")
 @allure.feature("Checking whether a book has been removed from cart")
 @allure.label('microservice', 'WEB')
 @allure.tag('regress', 'web', 'normal')

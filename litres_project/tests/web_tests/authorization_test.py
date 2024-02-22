@@ -4,13 +4,13 @@ from litres_project.data.data import User
 from litres_project.pages.web.main_page import main_page
 
 
-# @allure.epic('Authorized')
-# @allure.label("owner", "shakeawwake")
-# @allure.feature("Checking the authorization of the user")
-# @allure.label('microservice', 'WEB')
-# @allure.tag('regress', 'web', 'normal')
-# @allure.severity('normal')
-# @allure.label('layer', 'web')
+@allure.epic('Authorized')
+@allure.label("owner", "shakeawwake")
+@allure.feature("Checking the authorization of the user")
+@allure.label('microservice', 'WEB')
+@allure.tag('regress', 'web', 'normal')
+@allure.severity('normal')
+@allure.label('layer', 'web')
 def test_authorization_registered_user():
 
     user = User(
@@ -29,13 +29,13 @@ def test_authorization_registered_user():
         main_page.user_must_be_authorized(user)
 
 
-# @allure.epic('Authorized')
-# @allure.label("owner", "shakeawwake")
-# @allure.feature("Checking the authorization of the user")
-# @allure.label('microservice', 'WEB')
-# @allure.tag('regress', 'web', 'normal')
-# @allure.severity('normal')
-# @allure.label('layer', 'web')
+@allure.epic('Authorized')
+@allure.label("owner", "shakeawwake")
+@allure.feature("Checking the authorization of the user")
+@allure.label('microservice', 'WEB')
+@allure.tag('regress', 'web', 'normal')
+@allure.severity('normal')
+@allure.label('layer', 'web')
 def test_authorization_unregistered_user():
 
     user = User(

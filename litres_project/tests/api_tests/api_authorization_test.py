@@ -6,7 +6,7 @@ from litres_project.tests.api_requests import api_post
 
 
 @allure.epic('API. Authorized')
-@allure.label("owner", "flowerfrog")
+@allure.label("owner", "shakeawwake")
 @allure.feature("Checking the authorization of the user")
 @allure.label('microservice', 'API')
 @allure.tag('regress', 'api', 'normal')
