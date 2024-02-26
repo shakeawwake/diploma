@@ -8,7 +8,8 @@ class CartPage:
 
     def removing_book_to_cart(self):
         browser.element('[data-testid="cart__listDeleteButton--desktop"]').should(be.visible).click()
-        browser.element('.Modal-module__controls_1qN-h > .Button-module__button_primary_2FaKg').should(be.visible).click()
+        browser.element('.Modal-module__controls_1qN-h > .Button-module__button_primary_2FaKg').should(
+            be.visible).click()
         return self
 
     def book_must_be_removed_from_cart(self):

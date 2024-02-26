@@ -1,5 +1,4 @@
 import allure
-
 from litres_project.data.data import Book
 from litres_project.pages.web.main_page import main_page
 
@@ -12,7 +11,6 @@ from litres_project.pages.web.main_page import main_page
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_searching_of_book_by_title():
-
     book = Book(
         name='Стоя под радугой',
         author='Фэнни Флэгг',
@@ -38,7 +36,6 @@ def test_searching_of_book_by_title():
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_searching_of_book_by_author():
-
     book = Book(
         name='',
         author='Фэнни Флэгг',

@@ -1,6 +1,4 @@
 import allure
-
-import allure
 from litres_project.data.data import Book
 from litres_project.pages.web.book_page import book_page
 from litres_project.pages.web.cart_page import cart_page
@@ -14,7 +12,6 @@ from litres_project.pages.web.cart_page import cart_page
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_removing_book_from_cart():
-
     book = Book(
         name='Стоя под радугой',
         author='Фэнни Флэгг',
@@ -46,7 +43,6 @@ def test_removing_book_from_cart():
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_removing_book_from_cart_and_adding_to_favorites():
-
     book = Book(
         name='Стоя под радугой',
         author='Фэнни Флэгг',

@@ -12,7 +12,6 @@ from litres_project.pages.web.main_page import main_page
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_authorization_registered_user():
-
     user = User(
         name='Ксения Глазова',
         email=os.getenv('USER_EMAIL'),
@@ -37,7 +36,6 @@ def test_authorization_registered_user():
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_authorization_unregistered_user():
-
     user = User(
         name='test',
         email=os.getenv('UNREGISTERED_USER_EMAIL'),

@@ -11,7 +11,6 @@ from litres_project.pages.web.book_page import book_page
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_adding_book_to_cart():
-
     book = Book(
         name='Стоя под радугой',
         author='Фэнни Флэгг',
@@ -37,7 +36,6 @@ def test_adding_book_to_cart():
 @allure.severity('normal')
 @allure.label('layer', 'web')
 def test_adding_books_to_cart():
-
     book1 = Book(
         name='Стоя под радугой',
         author='Фэнни Флэгг',
