@@ -70,7 +70,8 @@ allure serve allure-results
 
 ![This is an image](design/image/allure_report_glazova.png)
 #### Список тест кейсов
-![This is an image](design/image/allure_report.png)
+
+![This is an image](design/image/list_of_cases.png)
 
 ----
 ### Интеграция с Allure TestOps
