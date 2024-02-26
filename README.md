@@ -77,6 +77,8 @@ allure serve allure-results
 ### Интеграция с Allure TestOps
 > <a target="_blank" href="https://allure.autotests.cloud/project/4083/dashboards">Ссылка на проект в AllureTestOps</a> (запрос доступа `admin@qa.guru`)
 
+#### Cписок всех кейсов, имеющихся в проекте
+![This is an image](design/image/tk.png)
 ----
 ### Интеграция с Jira
 > <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1128">Ссылка на проект в Jira</a>
