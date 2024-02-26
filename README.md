@@ -2,7 +2,7 @@
 
 > <a target="_blank" href="https://www.litres.ru">Ссылка на сайт</a>
 
-![This is an image](/Users/kglazova/Desktop/QA_auto_study/diploma/design/image/main_page_litres.png)
+![This is an image](design/image/main_page_litres.png)
 
 <h3> Список проверок, реализованных в автотестах:</h3>
 
@@ -86,7 +86,7 @@ allure serve allure-results
 ### Интеграция с Jira
 > <a target="_blank" href="https://jira.autotests.cloud/browse/HOMEWORK-1128">Ссылка на проект в Jira</a>
 
-![This is an image](/Users/kglazova/Desktop/QA_auto_study/diploma/design/image/jira_glazova.png)
+![This is an image](design/image/jira_glazova.png)
 
 ----
 ### Оповещение о результатах прогона тестов в Telegram
