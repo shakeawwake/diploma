@@ -68,7 +68,7 @@ allure serve allure-results
 
 #### Общие результаты
 
-![This is an image](/Users/kglazova/Desktop/QA_auto_study/diploma/design/image/allure_report_glazova.png)
+![This is an image](design/image/allure_report_glazova.png)
 #### Список тест кейсов
 ![This is an image](design/image/allure_report.png)
 #### Пример отчета о прохождении ui-теста
