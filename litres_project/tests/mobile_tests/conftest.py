@@ -38,7 +38,7 @@ def android_mobile_management(context):
             options.get_capability('remote_url'), options=options
         )
 
-    browser.config.timeout = float(os.getenv('timeout', 15))
+    browser.config.timeout = float(os.getenv('timeout', 10))
 
     browser.config._wait_decorator = support._logging.wait_with(
         context=allure_commons._allure.StepContext
