@@ -91,13 +91,13 @@ allure serve allure-results
 ----
 ### Оповещение о результатах прогона тестов в Telegram
 
-![This is an image](/Users/kglazova/Desktop/QA_auto_study/diploma/design/image/tg_glazova.png)
+![This is an image](design/image/tg_glazova.png)
 
 ----
 ### Пример видео прохождения ui-автотеста
 
-![autotest_gif](/Users/kglazova/Desktop/QA_auto_study/diploma/design/image/allure_video.gif)
+![autotest_gif](design/image/allure_video.gif)
 
 ### Пример видео прохождения mobile-автотеста
 
-![autotest_gif](/Users/kglazova/Desktop/QA_auto_study/diploma/design/image/mobile_at.gif)
+![autotest_gif](design/image/mobile_at.gif)
