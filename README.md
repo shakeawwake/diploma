@@ -71,12 +71,6 @@ allure serve allure-results
 ![This is an image](design/image/allure_report_glazova.png)
 #### Список тест кейсов
 ![This is an image](design/image/allure_report.png)
-#### Пример отчета о прохождении ui-теста
-![This is an image](design/image/example_test_ui_allure.png)
-#### Пример отчета о прохождении api-теста
-![This is an image](design/image/example_test_api_allure.png)
-#### Пример отчета о прохождении mobile-теста
-![This is an image](design/image/example_test_mobile_allure.png)
 
 ----
 ### Интеграция с Allure TestOps
