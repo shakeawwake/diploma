@@ -5,7 +5,7 @@ import pytest
 from appium import webdriver
 from dotenv import load_dotenv
 from selene import browser, support
-from litres_project.tests import attach_mobile
+from litres_project.utils import attach
 
 
 def pytest_addoption(parser):
@@ -46,9 +46,9 @@ def android_mobile_management(context):
 
     yield
 
-    attach_mobile.screenshot()
+    attach.screenshot()
 
-    attach_mobile.page_source_xml()
+    attach.page_source_xml()
 
     session_id = browser.driver.session_id
 
@@ -56,4 +56,4 @@ def android_mobile_management(context):
         browser.quit()
 
     if context == 'bstack':
-        attach_mobile.bstack_video(session_id)
+        attach.bstack_video(session_id)

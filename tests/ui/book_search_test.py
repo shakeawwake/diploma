@@ -1,23 +1,16 @@
 import allure
-from litres_project.data.data import Book
-from litres_project.pages.web.main_page import main_page
+from litres_project.pages.ui.main_page import main_page
+from litres_project.data.data import book
 
 
 @allure.epic('Search')
 @allure.label("owner", "shakeawwake")
 @allure.feature("Checking the book search on the main page")
 @allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
+@allure.tag('regress', 'ui', 'normal')
 @allure.severity('normal')
-@allure.label('layer', 'web')
+@allure.label('layer', 'ui')
 def test_searching_of_book_by_title():
-    book = Book(
-        name='Стоя под радугой',
-        author='Фэнни Флэгг',
-        url='',
-        price=''
-    )
-
     with allure.step("Open the main page"):
         main_page.open()
 
@@ -32,17 +25,10 @@ def test_searching_of_book_by_title():
 @allure.label("owner", "shakeawwake")
 @allure.feature("Checking the book search on the main page")
 @allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
+@allure.tag('regress', 'ui', 'normal')
 @allure.severity('normal')
-@allure.label('layer', 'web')
+@allure.label('layer', 'ui')
 def test_searching_of_book_by_author():
-    book = Book(
-        name='',
-        author='Фэнни Флэгг',
-        url='',
-        price=''
-    )
-
     with allure.step("Open the main page"):
         main_page.open()
 

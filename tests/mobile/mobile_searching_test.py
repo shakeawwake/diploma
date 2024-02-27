@@ -1,6 +1,4 @@
 import allure
-import pytest
-
 from litres_project.pages.mobile.main_page import main_page
 from litres_project.pages.mobile.books_to_read_page import book_search_page
 

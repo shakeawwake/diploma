@@ -1,16 +1,16 @@
 import os
 import allure
 from litres_project.data.data import User
-from litres_project.pages.web.main_page import main_page
+from litres_project.pages.ui.main_page import main_page
 
 
 @allure.epic('Authorized')
 @allure.label("owner", "shakeawwake")
 @allure.feature("Checking the authorization of the user")
 @allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
+@allure.tag('regress', 'ui', 'normal')
 @allure.severity('normal')
-@allure.label('layer', 'web')
+@allure.label('layer', 'ui')
 def test_authorization_registered_user():
     user = User(
         name='Ксения Глазова',
@@ -32,9 +32,9 @@ def test_authorization_registered_user():
 @allure.label("owner", "shakeawwake")
 @allure.feature("Checking the authorization of the user")
 @allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
+@allure.tag('regress', 'ui', 'normal')
 @allure.severity('normal')
-@allure.label('layer', 'web')
+@allure.label('layer', 'ui')
 def test_authorization_unregistered_user():
     user = User(
         name='test',

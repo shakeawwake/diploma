@@ -1,8 +1,8 @@
-import os
 import allure
 import jsonschema
-from litres_project.tests.load_schema import load_schema
-from litres_project.tests.api_requests import api_post
+from litres_project.schema.load_schema import load_schema
+from litres_project.utils.api_requests import api_post
+from tests.api.conftest import url, user_email, user_password, invalid_password, headers
 
 
 @allure.epic('API. Authorized')
@@ -15,12 +15,7 @@ from litres_project.tests.api_requests import api_post
 def test_authorization_registered_user():
     schema = load_schema('authorization.json')
 
-    url = "/auth/login"
-    email = os.getenv('USER_EMAIL')
-    password = os.getenv('USER_PASSWORD')
-    headers = {"Content-Type": "application/json"}
-
-    result = api_post(url, headers=headers, json={"login": email, "password": password})
+    result = api_post(url, headers=headers, json={"login": user_email, "password": user_password})
 
     assert result.status_code == 200
     jsonschema.validate(result.json(), schema)
@@ -37,12 +32,7 @@ def test_authorization_registered_user():
 def test_authorization_unregistered_user():
     schema = load_schema('failed_authorization.json')
 
-    url = "/auth/login"
-    email = os.getenv('USER_EMAIL')
-    invalid_password = os.getenv('UNREGISTERED_USER_PASSWORD')
-    headers = {"Content-Type": "application/json"}
-
-    result = api_post(url, headers=headers, json={"login": email, "password": invalid_password})
+    result = api_post(url, headers=headers, json={"login": user_email, "password": invalid_password})
 
     assert result.status_code == 401
     jsonschema.validate(result.json(), schema)

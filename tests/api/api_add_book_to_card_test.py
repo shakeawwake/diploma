@@ -1,7 +1,7 @@
 import allure
 import jsonschema
-from litres_project.tests.load_schema import load_schema
-from litres_project.tests.api_requests import api_put
+from litres_project.schema.load_schema import load_schema
+from litres_project.utils.api_requests import api_put
 
 
 @allure.epic('API. Add book to cart')

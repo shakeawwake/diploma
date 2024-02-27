@@ -4,7 +4,7 @@ from dotenv import load_dotenv
 from selene import browser
 from selenium import webdriver
 from selenium.webdriver.chrome.options import Options
-from litres_project.tests import attach_web
+from litres_project.utils import attach
 
 DEFAULT_BROWSER_VERSION = "100.0"
 
@@ -52,9 +52,9 @@ def setup_browser(request):
 
     yield browser
 
-    attach_web.add_screenshot(browser)
-    attach_web.add_logs(browser)
-    attach_web.add_html(browser)
-    attach_web.add_video(browser)
+    attach.add_screenshot(browser)
+    attach.add_logs(browser)
+    attach.add_html(browser)
+    attach.add_video(browser)
 
     browser.quit()

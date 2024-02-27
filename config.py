@@ -1,18 +1,17 @@
 import os
 from appium.options.android import UiAutomator2Options
 from pydantic import BaseModel
-from litres_project.tests import file
-
+from litres_project.utils import file
 
 
 class Config(BaseModel):
     context: str
     remote_url: str = os.getenv('REMOTE_URL')
-    device_name: str = os.getenv('deviceName')
-    app_local: str = os.getenv('app')
-    app_bstack: str = os.getenv('app')
-    platformName: str = os.getenv('platformName')
-    platformVersion: str = os.getenv('platformVersion')
+    device_name: str = os.getenv('DEVICENAME')
+    app_local: str = os.getenv('APP')
+    app_bstack: str = os.getenv('APP')
+    platformName: str = os.getenv('PLATFORMNAME')
+    platformVersion: str = os.getenv('PLATFORMVERSION')
     userName: str = os.getenv('USER_NAME')
     accessKey: str = os.getenv('ACCESS_KEY')
     appWaitActivity: str = "*"

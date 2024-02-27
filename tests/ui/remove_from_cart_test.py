@@ -1,24 +1,17 @@
 import allure
-from litres_project.data.data import Book
-from litres_project.pages.web.book_page import book_page
-from litres_project.pages.web.cart_page import cart_page
+from litres_project.pages.ui.book_page import book_page
+from litres_project.pages.ui.cart_page import cart_page
+from litres_project.data.data import book
 
 
 @allure.epic('Remove book from cart')
 @allure.label("owner", "shakeawwake")
 @allure.feature("Checking whether a book has been removed from cart")
 @allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
+@allure.tag('regress', 'ui', 'normal')
 @allure.severity('normal')
-@allure.label('layer', 'web')
+@allure.label('layer', 'ui')
 def test_removing_book_from_cart():
-    book = Book(
-        name='Стоя под радугой',
-        author='Фэнни Флэгг',
-        url='fenni-flegg/stoya-pod-radugoy-8685881/',
-        price='359 ₽'
-    )
-
     with allure.step("Open the book page"):
         book_page.open(book)
 
@@ -39,17 +32,10 @@ def test_removing_book_from_cart():
 @allure.label("owner", "shakeawwake")
 @allure.feature("Checking whether a book has been removed from cart")
 @allure.label('microservice', 'WEB')
-@allure.tag('regress', 'web', 'normal')
+@allure.tag('regress', 'ui', 'normal')
 @allure.severity('normal')
-@allure.label('layer', 'web')
+@allure.label('layer', 'ui')
 def test_removing_book_from_cart_and_adding_to_favorites():
-    book = Book(
-        name='Стоя под радугой',
-        author='Фэнни Флэгг',
-        url='fenni-flegg/stoya-pod-radugoy-8685881/',
-        price='359 ₽'
-    )
-
     with allure.step("Open the book page"):
         book_page.open(book)
 
