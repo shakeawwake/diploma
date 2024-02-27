@@ -7,11 +7,11 @@ from litres_project.utils import file
 class Config(BaseModel):
     context: str
     remote_url: str = os.getenv('REMOTE_URL')
-    device_name: str = os.getenv('DEVICENAME')
+    device_name: str = os.getenv('DEVICE_NAME')
     app_local: str = os.getenv('APP')
     app_bstack: str = os.getenv('APP')
-    platformName: str = os.getenv('PLATFORMNAME')
-    platformVersion: str = os.getenv('PLATFORMVERSION')
+    platformName: str = os.getenv('PLATFORM_NAME')
+    platformVersion: str = os.getenv('PLATFORM_VERSION')
     userName: str = os.getenv('USER_NAME')
     accessKey: str = os.getenv('ACCESS_KEY')
     appWaitActivity: str = "*"
